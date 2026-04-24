@@ -29,6 +29,16 @@ function App() {
       <SymptomChecker />
       <NearbyHelp />
       <EmergencyButton />
+      <footer className="footer">
+  <p>© 2026 Swasthya Sathii</p>
+  <p>Created by Mohammed Sahil & Pavan Vastrad</p>
+  <p>Built with ❤️ for rural healthcare</p>
+
+  <div className="footer-links">
+    <a href="https://github.com/Mdsahil01" target="_blank">GitHub</a>
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+</footer>
     </div>
   );
 }
