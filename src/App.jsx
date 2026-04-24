@@ -36,7 +36,7 @@ function App() {
 
   <div className="footer-links">
     <a href="https://github.com/Mdsahil01" target="_blank">GitHub</a>
-    <a href="#" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/mdsahil01/" target="_blank">LinkedIn</a>
   </div>
 </footer>
     </div>
