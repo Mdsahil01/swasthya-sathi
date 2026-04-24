@@ -1,0 +1,37 @@
+import React, { useState } from "react";
+import SymptomChecker from "./components/SymptomChecker";
+import PatientForm from "./components/PatientForm";
+import NearbyHelp from "./components/NearbyHelp";
+import EmergencyButton from "./components/EmergencyButton";
+import "./styles/app.css";
+
+
+function App() {
+ const [darkMode, setDarkMode] = useState(() => {
+  return localStorage.getItem("theme") !== "light";
+ });
+  return (
+    <div className={darkMode ? "app-container dark" : "app-container light"}>
+      <h1>🩺 Swasthya Sathi</h1>
+      <p className="subtitle">Rural Health Assistant</p>
+      <p className="ai-tag">AI-powered basic health triage system</p>
+      <button 
+      className="toggle-btn"
+      onClick={() => {
+      setDarkMode(!darkMode);
+      localStorage.setItem("theme", darkMode ? "light" : "dark");
+      }}
+     >
+     {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+     </button>
+
+      <PatientForm />
+      <SymptomChecker />
+      <NearbyHelp />
+      <EmergencyButton />
+    </div>
+  );
+}
+
+export default App;
+
