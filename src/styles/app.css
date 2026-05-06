@@ -27,6 +27,26 @@ input, select {
   margin: 8px 0;
 }
 
+.symptom-options {
+  width: 90%;
+  margin: 8px auto;
+  text-align: left;
+}
+
+.symptom-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.symptom-option input {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   padding: 8px 15px;
   margin-top: 10px;
